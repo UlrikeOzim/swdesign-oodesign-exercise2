@@ -1,0 +1,41 @@
+@startuml
+
+/' Exercise Refactor To SOLID'/
+
+skinparam classAttributeIconSize 0
+
+class Snack{
+}
+class PizzaBar{
+    +makeSnack: Snack
+}
+class BurgerBar{
+    +makeSnack: Snack
+}
+class SandwichBar{
+    + makeSnack: Snack
+}
+
+class FoodMarket{
+    +prepareSnack()
+}
+
+interface ISnackbar{
+    +makePizza()
+    +makeBurger()
+    +makeSandwich()
+}
+
+Snack<--SandwichBar
+Snack<--PizzaBar
+Snack<--BurgerBar
+
+ISnackbar<|..SandwichBar
+ISnackbar<|..SandwichBar
+ISnackbar<|..BurgerBar
+
+SandwichBar <-- FoodMarket
+SandwichBar <-- FoodMarket
+BurgerBar <-- FoodMarket
+
+@enduml
