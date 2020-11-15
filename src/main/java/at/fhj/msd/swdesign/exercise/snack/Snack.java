@@ -1,15 +1,15 @@
 package at.fhj.msd.swdesign.exercise.snack;
 
-public class Snack {
+public abstract class Snack {
 
-    public final static String PIZZA = "Pizza";
-    public final static String BURGER = "Burger";
-    public final static String SANDWICH = "Sandwich";
+    //public final static String PIZZA = "Pizza";
+    //public final static String BURGER = "Burger";
+  //  public final static String SANDWICH = "Sandwich";
 
     private String snackType;
-
-    public Snack(String type) {
-        snackType = type;
+//protected for further "extend" see new classes "SnackXXX"
+    protected Snack(String snackType) {
+        this.snackType = snackType;
     }
 
     @Override

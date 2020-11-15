@@ -15,7 +15,7 @@ public class PizzaBar implements IPizzaBar {
     }
 
     public void makePizza() {
-        this.snack = new Snack(Snack.PIZZA);
+        this.snack = new SnackPizza();
     }
 
    /* public void makeBurger() {

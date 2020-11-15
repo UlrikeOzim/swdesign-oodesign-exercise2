@@ -19,7 +19,7 @@ public class BurgerBar implements IBurgerBar {
     }*/
 
     public void makeBurger() {
-        this.snack = new Snack(Snack.BURGER);
+        this.snack = new SnackBurger();
 
     }
 

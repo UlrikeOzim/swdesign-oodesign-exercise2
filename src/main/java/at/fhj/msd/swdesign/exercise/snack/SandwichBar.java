@@ -24,6 +24,6 @@ public class SandwichBar implements ISandwichBar {
     }*/
 
     public void makeSandwich() {
-        this.snack = new Snack(Snack.SANDWICH);
+        this.snack = new SnackSandwich();
     }
 }
