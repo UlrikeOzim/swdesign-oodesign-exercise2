@@ -1,6 +1,6 @@
 package at.fhj.msd.swdesign.exercise.snack;
 
-public class PizzaBar implements ISnackbar {
+public class PizzaBar implements IPizzaBar {
 
     private Snack snack;
 
@@ -18,11 +18,11 @@ public class PizzaBar implements ISnackbar {
         this.snack = new Snack(Snack.PIZZA);
     }
 
-    public void makeBurger() {
+   /* public void makeBurger() {
     }
 
     public void makeSandwich() {
-    }
+    }*/
 
 
 }

@@ -2,9 +2,7 @@ package at.fhj.msd.swdesign.exercise.snack;
 
 public interface ISnackbar {
 
-    void makePizza();
-
+     void makeSandwich();
     void makeBurger();
-
-    void makeSandwich();
+    void makePizza();
 }
